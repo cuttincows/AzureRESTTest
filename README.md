@@ -21,6 +21,11 @@ On the Unity side, simply load the project (any recent Unity version should work
 
 If you setup everything correctly, submitting a valid color in the form should update the running Unity Editor's cube!
 
+There's also an in-editor tool - go to `Tools/Color editor tool` in Unity to open it, and if you select a color in the tool and hit "submit", the local server is updated with the color you selected.
+
+<img width="620" height="315" alt="image" src="https://github.com/user-attachments/assets/455db860-843a-4c9e-bf24-53e6a509c038" />
+
+
 
 ## How's it work?
 - On the Django side, I'm creating a template form that takes just the input, and saves it to the 0th entry of the ObjectData list.  This is genericized on the Django side, so any kind of database could be swapped out to manage this data
