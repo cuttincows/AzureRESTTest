@@ -49,9 +49,6 @@ public class SetColorFromServer : MonoBehaviour
         {
             yield return webRequest.SendWebRequest();
 
-            Debug.Log($"Success?: {webRequest.result}");
-            Debug.Log($"Received: {webRequest.downloadHandler.text}");
-            
             SetColor(ParseColor(webRequest.downloadHandler.text));
         }
         float fetchDuration = Time.realtimeSinceStartup - fetchStartTime;
